@@ -192,3 +192,19 @@ Dribbble: <https://dribbble.com/creativetim>
 
 Instagram: <https://www.instagram.com/CreativeTimOfficial>
 
+npx expo prebuild
+npx expo run:android
+detox test --configuration android.emu.debug
+npx expo run:android --variant debug
+npx expo run:android --variant release
+open -a /Applications/Android Studio.app android
+
+https://docs.expo.dev/workflow/expo-cli/#compiling
+
+kotlin-compiler-30.0.4.jar
+ groovy-3.0.7.jar 
+
+
+ /home/ft/Projects/JavaScript/ReactNative/argon-react-native-detox/android/app/build/outputs/apk/release/app-release.apk
+ /home/ft/Projects/JavaScript/ReactNative/argon-react-native-detox/android/app/build/outputs/apk/debug/app-debug.apk
+ /home/ft/Projects/JavaScript/ReactNative/argon-react-native-detox/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk
