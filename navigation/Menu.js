@@ -18,6 +18,7 @@ function CustomDrawerContent({
     <Block
       style={styles.container}
       forceInset={{ top: "always", horizontal: "never" }}
+      testID="welcomeBlock"
     >
       <Block flex={0.06} style={styles.header}>
         <Image styles={styles.logo} source={Images.Logo} />
@@ -49,7 +50,7 @@ function CustomDrawerContent({
               DOCUMENTATION
             </Text>
           </Block>
-          <DrawerCustomItem title="Getting Started" navigation={navigation} />
+          <DrawerCustomItem title="Getting Started" navigation={navigation} testID="gettingStarted" />
         </ScrollView>
       </Block>
     </Block>

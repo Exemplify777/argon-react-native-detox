@@ -35,6 +35,7 @@ function ElementsStack(props) {
     >
       <Stack.Screen
         name="Elements"
+        testID="stackElements"
         component={Elements}
         options={{
           header: ({ navigation, scene }) => (
@@ -45,6 +46,7 @@ function ElementsStack(props) {
       />
       <Stack.Screen
         name="Pro"
+        testID="stackPro"
         component={Pro}
         options={{
           header: ({ navigation, scene }) => (
@@ -67,6 +69,7 @@ function ElementsStack(props) {
 function ArticlesStack(props) {
   return (
     <Stack.Navigator
+      testID="stackNavigator"
       screenOptions={{
         mode: "card",
         headerShown: "screen",
@@ -74,6 +77,7 @@ function ArticlesStack(props) {
     >
       <Stack.Screen
         name="Articles"
+        testID="stackArticles"
         component={Articles}
         options={{
           header: ({ navigation, scene }) => (
@@ -84,11 +88,12 @@ function ArticlesStack(props) {
       />
       <Stack.Screen
         name="Pro"
+        testID="stackArticlesPro"
         component={Pro}
         options={{
           header: ({ navigation, scene }) => (
             <Header
-              title=""
+              title="Pro title"
               back
               white
               transparent
@@ -114,6 +119,7 @@ function ProfileStack(props) {
     >
       <Stack.Screen
         name="Profile"
+        testID="stackProfile"
         component={Profile}
         options={{
           header: ({ navigation, scene }) => (
@@ -131,6 +137,7 @@ function ProfileStack(props) {
       />
       <Stack.Screen
         name="Pro"
+        testID="stackProfilePro"
         component={Pro}
         options={{
           header: ({ navigation, scene }) => (
@@ -160,6 +167,7 @@ function HomeStack(props) {
     >
       <Stack.Screen
         name="Home"
+        testID="stackHome"
         component={Home}
         options={{
           header: ({ navigation, scene }) => (
@@ -176,6 +184,7 @@ function HomeStack(props) {
       />
       <Stack.Screen
         name="Pro"
+        testID="stackHomePro"
         component={Pro}
         options={{
           header: ({ navigation, scene }) => (
@@ -205,6 +214,7 @@ export default function OnboardingStack(props) {
     >
       <Stack.Screen
         name="Onboarding"
+        testID="stackOnboarding"
         component={Onboarding}
         option={{
           headerTransparent: true,
@@ -248,6 +258,7 @@ function AppStack(props) {
     >
       <Drawer.Screen
         name="Home"
+        testID="drawerHome"
         component={HomeStack}
         options={{
           headerShown: false,
@@ -255,6 +266,7 @@ function AppStack(props) {
       />
       <Drawer.Screen
         name="Profile"
+        testID="drawerProfile"
         component={ProfileStack}
         options={{
           headerShown: false,
@@ -262,6 +274,7 @@ function AppStack(props) {
       />
       <Drawer.Screen
         name="Account"
+        testID="drawerAccount"
         component={Register}
         options={{
           headerShown: false,
@@ -269,6 +282,7 @@ function AppStack(props) {
       />
       <Drawer.Screen
         name="Elements"
+        testID="drawerElements"
         component={ElementsStack}
         options={{
           headerShown: false,
@@ -276,6 +290,7 @@ function AppStack(props) {
       />
       <Drawer.Screen
         name="Articles"
+        testID="drawerArticles"
         component={ArticlesStack}
         options={{
           headerShown: false,

@@ -18,7 +18,7 @@ class Onboarding extends React.Component {
     const { navigation } = this.props;
 
     return (
-      <Block flex style={styles.container}>
+      <Block flex style={styles.container} >
         <StatusBar hidden />
         <Block flex center>
         <ImageBackground
@@ -31,9 +31,9 @@ class Onboarding extends React.Component {
         </Block>
         <Block flex space="between" style={styles.padded}>
             <Block flex space="around" style={{ zIndex: 2 }}>
-              <Block style={styles.title}>
+              <Block style={styles.title} >
                 <Block>
-                  <Text color="white" size={60}>
+                  <Text color="white" size={60} testID="screenOnboarding">
                     Design
                   </Text>
                 </Block>
@@ -43,7 +43,7 @@ class Onboarding extends React.Component {
                   </Text>
                 </Block>
                 <Block style={styles.subTitle}>
-                  <Text color="white" size={16}>
+                  <Text color="white" size={16} >
                     Fully coded React Native components.
                   </Text>
                 </Block>
@@ -51,6 +51,7 @@ class Onboarding extends React.Component {
               <Block center>
                 <Button
                   style={styles.button}
+                  testID="buttonGettingStarted"
                   color={argonTheme.COLORS.SECONDARY}
                   onPress={() => navigation.navigate("App")}
                   textStyle={{ color: argonTheme.COLORS.BLACK }}
