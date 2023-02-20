@@ -27,7 +27,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Block flex center style={styles.home}>
+      <Block flex center style={styles.home} testID="blockHome">
         {this.renderArticles()}
       </Block>
     );

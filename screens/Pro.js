@@ -11,7 +11,7 @@ export default class Pro extends React.Component {
     const { navigation } = this.props;
 
     return (
-      <Block flex style={styles.container}>
+      <Block flex style={styles.container} testID="blockPro">
         <StatusBar barStyle="light-content" />
         <Block flex>
           <ImageBackground

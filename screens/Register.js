@@ -16,7 +16,7 @@ const { width, height } = Dimensions.get("screen");
 class Register extends React.Component {
   render() {
     return (
-      <Block flex middle>
+      <Block flex middle testID="blockRegister">
         <StatusBar hidden />
         <ImageBackground
           source={Images.RegisterBackground}
@@ -68,9 +68,10 @@ class Register extends React.Component {
                     enabled
                   >
                     <Block width={width * 0.8} style={{ marginBottom: 15 }}>
-                      <Input
+                      <Input 
                         borderless
                         placeholder="Name"
+                        testID="fieldName"
                         iconContent={
                           <Icon
                             size={16}
@@ -86,6 +87,7 @@ class Register extends React.Component {
                       <Input
                         borderless
                         placeholder="Email"
+                        testID="fieldEmail"
                         iconContent={
                           <Icon
                             size={16}
@@ -102,6 +104,7 @@ class Register extends React.Component {
                         password
                         borderless
                         placeholder="Password"
+                        testID="fieldPassword"
                         iconContent={
                           <Icon
                             size={16}
@@ -127,12 +130,14 @@ class Register extends React.Component {
                         checkboxStyle={{
                           borderWidth: 3
                         }}
+                        testID="fieldAgree"
                         color={argonTheme.COLORS.PRIMARY}
                         label="I agree with the"
                       />
                       <Button
                         style={{ width: 100 }}
                         color="transparent"
+                        testID="buttonPrivacy"
                         textStyle={{
                           color: argonTheme.COLORS.PRIMARY,
                           fontSize: 14
@@ -142,7 +147,7 @@ class Register extends React.Component {
                       </Button>
                     </Block>
                     <Block middle>
-                      <Button color="primary" style={styles.createButton}>
+                      <Button color="primary" style={styles.createButton} testID="buttonCreateAccount">
                         <Text bold size={14} color={argonTheme.COLORS.WHITE}>
                           CREATE ACCOUNT
                         </Text>

@@ -47,7 +47,7 @@ class Articles extends React.Component {
         key={`product-${item.title}`}
         onPress={() => navigation.navigate("Pro", { product: item })}
       >
-        <Block center style={styles.productItem}>
+        <Block center style={styles.productItem} testID="blockArticles">
           <Image
             resizeMode="cover"
             style={styles.productImage}

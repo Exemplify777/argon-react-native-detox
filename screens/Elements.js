@@ -31,13 +31,13 @@ class Elements extends React.Component {
         </Text>
         <Block style={{ paddingHorizontal: theme.SIZES.BASE }}>
           <Block center>
-            <Button color="default" style={styles.button}>
+            <Button color="default" style={styles.button} testID="buttonDefault">
               DEFAULT
             </Button>
           </Block>
           <Block center>
             <Button
-              color="secondary"
+              color="secondary"  testID="buttonSecondary"
               textStyle={{ color: "black", fontSize: 12, fontWeight: "700" }}
               style={styles.button}
             >
@@ -45,7 +45,7 @@ class Elements extends React.Component {
             </Button>
           </Block>
           <Block center>
-            <Button style={styles.button}>PRIMARY</Button>
+            <Button style={styles.button} testID="buttonPrimary">PRIMARY</Button>
           </Block>
           <Block center>
             <Button color="info" style={styles.button}>
@@ -53,17 +53,17 @@ class Elements extends React.Component {
             </Button>
           </Block>
           <Block center>
-            <Button color="success" style={styles.button}>
+            <Button color="success" style={styles.button} testID="buttonSuccess">
               SUCCESS
             </Button>
           </Block>
           <Block center>
-            <Button color="warning" style={styles.button}>
+            <Button color="warning" style={styles.button} testID="buttonWarning">
               WARNING
             </Button>
           </Block>
           <Block center>
-            <Button color="error" style={styles.button}>
+            <Button color="error" style={styles.button} testID="buttonError">
               ERROR
             </Button>
           </Block>
@@ -75,12 +75,12 @@ class Elements extends React.Component {
               />
             </Block>
             <Block flex center>
-              <Button small center color="default" style={styles.optionsButton}>
+              <Button small center color="default" style={styles.optionsButton} testID="buttonDelete">
                 DELETE
               </Button>
             </Block>
             <Block flex={1.25} right>
-              <Button center color="default" style={styles.optionsButton}>
+              <Button center color="default" style={styles.optionsButton} testID="buttonSaveForLater">
                 SAVE FOR LATER
               </Button>
             </Block>
@@ -152,12 +152,12 @@ class Elements extends React.Component {
           Inputs
         </Text>
         <Block style={{ paddingHorizontal: theme.SIZES.BASE }}>
-          <Input right placeholder="Regular" iconContent={<Block />} />
+          <Input right placeholder="Regular" iconContent={<Block />} testID="inputRegular"/>
         </Block>
         <Block style={{ paddingHorizontal: theme.SIZES.BASE }}>
           <Input
             right
-            placeholder="Regular Custom"
+            placeholder="Regular Custom" testID="inputRegularCustom"
             style={{
               borderColor: argonTheme.COLORS.INFO,
               borderRadius: 4,
@@ -168,7 +168,7 @@ class Elements extends React.Component {
         </Block>
         <Block style={{ paddingHorizontal: theme.SIZES.BASE }}>
           <Input
-            placeholder="Icon left"
+            placeholder="Icon left" testID="inputIconLeft"
             iconContent={
               <Icon
                 size={11}
@@ -183,7 +183,7 @@ class Elements extends React.Component {
         <Block style={{ paddingHorizontal: theme.SIZES.BASE }}>
           <Input
             right
-            placeholder="Icon Right"
+            placeholder="Icon Right" testID="inputIconRight"
             iconContent={
               <Icon
                 size={11}
@@ -198,7 +198,7 @@ class Elements extends React.Component {
           <Input
             success
             right
-            placeholder="Success"
+            placeholder="Success" testID="inputSuccess"
             iconContent={
               <Block
                 middle
@@ -223,7 +223,7 @@ class Elements extends React.Component {
           <Input
             error
             right
-            placeholder="Error Input"
+            placeholder="Error Input" testID="inputErrorInput"
             iconContent={
               <Block
                 middle
@@ -263,14 +263,14 @@ class Elements extends React.Component {
           >
             <Text size={14}>Switch is ON</Text>
             <Switch
-              value={this.state["switch-1"]}
+              value={this.state["switch-1"]} testID="switchOn"
               onValueChange={() => this.toggleSwitch("switch-1")}
             />
           </Block>
           <Block row middle space="between">
             <Text size={14}>Switch is OFF</Text>
             <Switch
-              value={this.state["switch-2"]}
+              value={this.state["switch-2"]} testID="switchOff"
               onValueChange={() => this.toggleSwitch("switch-2")}
             />
           </Block>
@@ -410,7 +410,7 @@ class Elements extends React.Component {
 
   render() {
     return (
-      <Block flex center>
+      <Block flex center testID="blockElements">
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 30, width }}

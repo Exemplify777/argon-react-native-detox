@@ -18,7 +18,7 @@ class Onboarding extends React.Component {
     const { navigation } = this.props;
 
     return (
-      <Block flex style={styles.container} >
+      <Block flex style={styles.container} testID="blockOnboarding" >
         <StatusBar hidden />
         <Block flex center>
         <ImageBackground

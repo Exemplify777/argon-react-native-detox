@@ -20,7 +20,7 @@ const thumbMeasure = (width - 48 - 32) / 3;
 class Profile extends React.Component {
   render() {
     return (
-      <Block flex style={styles.profile}>
+      <Block flex style={styles.profile} testID="blockProfile">
         <Block flex>
           <ImageBackground
             source={Images.ProfileBackground}
