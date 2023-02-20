@@ -47,4 +47,5 @@ Argon React Native is a fully coded app template built over [Argon React Native]
 
 ### Run test
 - Build: `detox build  --configuration android.emu.release`
-- Run test: `detox test --configuration android.emu.release`
+- Run test: `detox test --configuration android.emu.release` 
+TODO: there is issues with detecting elements by IDs, it should be solved to properly working current test cases, it is on progreess.
