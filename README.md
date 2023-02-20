@@ -22,7 +22,26 @@ Argon React Native is a fully coded app template built over [Argon React Native]
     - Fill 'Email' field with 'email@email.com' value
     - Fill 'Password' field with 'password1' value
     - Check 'I agree with...' checkbox.
+    - Press 'Privacy' button.
+    - Press 'Create Account' button.
 - Open from menu 'Elements' page and scroll down
+    - Press 'Default' button.
+    - Press 'Secondary' button.
+    - Press 'Primary' button.
+    - Press 'Info' button.
+    - Press 'Success' button.
+    - Press 'Warning' button.
+    - Press 'Error' button.
+    - Press 'Warning' button.
+    - Fill 'Regular' field with 'Text1' value
+    - Fill 'Regular Custom' field with 'Text2' value
+    - Fill 'Icon Left' field with 'Text3' value
+    - Fill 'Icon Right' field with 'Text4' value
+    - Fill 'Success' field with 'Text5' value
+    - Fill 'Error input' field with 'Text6' value
+    - Tap to 'Switch is On' field
+    - Tap to 'Switch is Off' field
+    - Scroll down.
 - Open from menu 'Articles' page and scroll down
 
 
